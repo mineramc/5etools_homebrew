@@ -189,22 +189,29 @@
 				"E"
 			],
 			"ac": [
-				10
+				{
+					"ac": 18,
+					"from": [
+						"unarmored defense"
+					]
+				}
 			],
 			"hp": {
-				"average": 4,
-				"formula": "1d8"
+				"formula": "11d8 + 33",
+				"average": 82
 			},
 			"speed": {
-				"walk": 30
+				"walk": 30,
+				"fly": 30,
+				"climb": 30
 			},
 			"str": 10,
-			"dex": 10,
-			"con": 10,
-			"int": 10,
+			"dex": 20,
+			"con": 16,
+			"int": 8,
 			"wis": 10,
-			"cha": 10,
-			"passive": 10,
+			"cha": 16,
+			"passive": 18,
 			"cr": "11",
 			"languages": [
 				"Draconic",
@@ -219,13 +226,16 @@
 				"TC"
 			],
 			"save": {
-				"dex": "+4",
-				"int": "+4"
+				"dex": "+9",
+				"int": "+3"
 			},
 			"skill": {
-				"stealth": "+8",
-				"deception": "+8",
-				"persuasion": "+8"
+				"stealth": "+13",
+				"deception": "+11",
+				"persuasion": "+11",
+				"acrobatics": "+9",
+				"intimidation": "+7",
+				"perception": "+8"
 			},
 			"trait": [
 				{
@@ -248,13 +258,32 @@
 					"entries": [
 						"Dyrwen Blackwing has advantage against all creatures that have been hit with a duplicate of Syndicate in the past turn."
 					]
+				},
+				{
+					"name": "Descent of Dragons",
+					"entries": [
+						"When Dyrwen falls, he can summon spectral draconic wings to allow you to glide, which last until he lands. When he does so, he can move up to 2 feet horizontally for every 1 foot he descends."
+					]
+				},
+				{
+					"name": "Danger Sense",
+					"entries": [
+						"Dyrwen has advantage on Dexterity saving throws against effects that he can see."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If Dyrwen is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, Dyrwen instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
 				}
 			],
 			"traitTags": [
 				"Sneak Attack"
 			],
 			"conditionInflict": [
-				"frightened"
+				"frightened",
+				"unconscious"
 			],
 			"action": [
 				{
@@ -266,7 +295,7 @@
 				{
 					"name": "Syndicate",
 					"entries": [
-						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}9 ({@damage 1d4 + 7}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, becoming {@condition poisoned} on a failed save. While {@condition poisoned} in this way, the target takes 3 ({@damage 1d6}) fire damage at the start of each of their turns and any healing they receive is halved. They may repeat the saving throw at the end of their turn, ending the effect on a success."
+						"{@atk mw,rw} {@hit 12} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}9 ({@damage 1d4 + 7}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, becoming {@condition poisoned} on a failed save. While {@condition poisoned} in this way, the target takes 3 ({@damage 1d6}) fire damage at the start of each of their turns and any healing they receive is halved. They may repeat the saving throw at the end of their turn, ending the effect on a success."
 					]
 				}
 			],
@@ -276,6 +305,42 @@
 			"miscTags": [
 				"RW",
 				"MW"
+			],
+			"bonus": [
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"Dyrwen may take the Dodge, Disengage, or Dash actions as a bonus action."
+					]
+				},
+				{
+					"name": "Rage (2/Long Rest)",
+					"entries": [
+						"Dyrwen gains advantage on Strength checks and Strength saving throws and gains resistance to bludgeoning, piercing, and slashing damage. His rage lasts for 1 minute and ends early if he is knocked {@condition unconscious} or if his turn ends and he hasn't attacked a hostile creature since your last turn or taken damage since then."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Uncanny Dodge",
+					"entries": [
+						"When an attacker hits Dyrwen with an attack, he may use his reaction to halve the attack's damage against him."
+					]
+				}
+			],
+			"immune": [
+				"acid"
+			],
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "while raging",
+					"cond": true
+				}
 			],
 			"damageTags": [
 				"F",
