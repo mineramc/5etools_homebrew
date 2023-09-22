@@ -1,0 +1,289 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Custom",
+				"abbreviation": "CST",
+				"full": "Custom",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		]
+	},
+	"monster": [
+		{
+			"name": "Shadow's Hand Rogue",
+			"source": "Custom",
+			"page": 343,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"average": 78,
+				"formula": "12d8 + 24"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 14,
+			"int": 13,
+			"wis": 11,
+			"cha": 10,
+			"save": {
+				"dex": "+6",
+				"int": "+4"
+			},
+			"skill": {
+				"acrobatics": "+6",
+				"deception": "+6",
+				"perception": "+3",
+				"stealth": "+12"
+			},
+			"passive": 13,
+			"resist": [
+				"poison"
+			],
+			"languages": [
+				"Thieves' cant plus any two languages"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Assassinate",
+					"entries": [
+						"During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a {@quickref Surprise|PHB|3|0|surprised} creature is a critical hit."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"The assassin deals an extra 14 ({@dice 4d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that isn't {@condition incapacitated} and the assassin doesn't have disadvantage on the attack roll."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The assassin makes two dagger attacks."
+					]
+				},
+				{
+					"name": "Syndicate (Duplicate)",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target., thrown 20/60 ft. {@h}6 ({@damage 1d4 + 4}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, taking 24 ({@damage 7d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Light Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 80/320 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, taking 24 ({@damage 7d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/assassin.mp3"
+			},
+			"attachedItems": [
+				"light crossbow|phb"
+			],
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"X",
+				"TC"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Assassin.png",
+			"fluff": {
+				"name": "Assassin",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Trained in the use of poison, assassins are remorseless killers who work for nobles, guildmasters, sovereigns, and anyone else who can afford them."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Assassin.webp"
+						}
+					}
+				]
+			},
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Dyrwen Blackwing",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dragonborn"
+				]
+			},
+			"source": "Custom",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"average": 4,
+				"formula": "1d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"cr": "11",
+			"languages": [
+				"Draconic",
+				"Common",
+				"Deep Speech",
+				"Thieves' cant"
+			],
+			"languageTags": [
+				"DR",
+				"C",
+				"DS",
+				"TC"
+			],
+			"save": {
+				"dex": "+4",
+				"int": "+4"
+			},
+			"skill": {
+				"stealth": "+8",
+				"deception": "+8",
+				"persuasion": "+8"
+			},
+			"trait": [
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"Once per turn, Dyrwen Blackwing deals an extra 17 ({@dice 5d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of Dyrwen Blackwing that isn't {@condition incapacitated} and Dyrwen Blackwing doesn't have disadvantage on the attack roll. They may change this damage to acid, poison, fire, cold, or lightning at will."
+					]
+				},
+				{
+					"name": "Blessing of the Wyrm (4/Short Rest)",
+					"entries": [
+						"When Dyrwen Blackwing damages a creature with Sneak Attack, they may invoke one of the following effects:",
+						"Fleeting Fear: The creature must make a DC [8 + CHA + 4] saving throw, or be {@condition frightened} until the start of Dyrwen's next turn.",
+						"Repulsion Strike: The creature is pushed 10 ft. away from Dyrwen Blackwing.",
+						"Sapping Strike: The creature has disadvantage on all attack rolls it makes before the start of Dyrwen's next turn."
+					]
+				},
+				{
+					"name": "Syndicate - Clean Up",
+					"entries": [
+						"Dyrwen Blackwing has advantage against all creatures that have been hit with a duplicate of Syndicate in the past turn."
+					]
+				}
+			],
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Dyrwen makes two attacks with Syndicate."
+					]
+				},
+				{
+					"name": "Syndicate",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}9 ({@damage 1d4 + 7}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, becoming {@condition poisoned} on a failed save. While {@condition poisoned} in this way, the target takes 3 ({@damage 1d6}) fire damage at the start of each of their turns and any healing they receive is halved. They may repeat the saving throw at the end of their turn, ending the effect on a success."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"RW",
+				"MW"
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		}
+	]
+}
